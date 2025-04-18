@@ -888,8 +888,8 @@ video {
   height: 7rem;
 }
 
-.h-32 {
-  height: 8rem;
+.h-40 {
+  height: 10rem;
 }
 
 .h-\[420px\] {
@@ -904,8 +904,8 @@ video {
   width: 7rem;
 }
 
-.w-32 {
-  width: 8rem;
+.w-40 {
+  width: 10rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -1963,7 +1963,7 @@ video {
 }
 
 .bg-home {
-  background-image: url('/assets/bg.png');
+  background-image: url('/assets/burguer1.png');
 }
 
 .decoration-slice {
@@ -2684,7 +2684,7 @@ video {
 }
 
 body{
-  background-color: #F6F7F8;
+  background-color: #d1d1d1;
 }
 
 @media (min-width: 640px) {
