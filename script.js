@@ -167,15 +167,19 @@ checkoutBtn.addEventListener("click", function () {
         return;
     }
 
-    const cartItems = cart.map((item) => {
+    let cartItems = cart.map((item) => {
         return (
             `
             ${item.name}
             Quantidade: (${item.quantity})
-            Preço: R$${item.price}|
+            Preço: R$${item.price.toFixed(2)}|
             `
         )
-    }).join("")
+    }).join("\n")
+
+    const total = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+
+    cartItems += `\n\nTotal: R$${total.toFixed(2)}`;
 
     const message = encodeURIComponent(cartItems)
     const phone = "14991793565"
