@@ -7,6 +7,7 @@ const checkoutBtn = document.getElementById("checkout-btn")
 const closeModalBtn = document.getElementById("close-modal-btn")
 const cartCounter = document.getElementById("cart-count")
 const addressInput = document.getElementById("address")
+const nameInput = document.getElementById("name-input")
 const addressWarn = document.getElementById("address-warn")
 
 let cart = [];
@@ -184,7 +185,9 @@ checkoutBtn.addEventListener("click", function () {
     const message = encodeURIComponent(cartItems)
     const phone = "14991793565"
 
-    window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank")
+    window.open(`https://wa.me/${phone}?text=${message} 
+        nome: ${nameInput.value} 
+        Endereço: ${addressInput.value}`, "_blank")
 
     cart = [];
     updateCartModal();
